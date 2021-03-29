@@ -32,6 +32,7 @@ class Page extends Component {
         })
     };
 
+    // Adds functionallity to the search bar
     handleSearchChange = event => {
         this.setState({search: event.target.value})
     };
@@ -46,6 +47,7 @@ class Page extends Component {
         })
     };
 
+    // Renders the user information table
     renderTable = () => {
         return this.filterEmployee().map((user, index) => {
 
@@ -70,6 +72,7 @@ class Page extends Component {
         })
     };
 
+    // Renders our page layout
     render() {
         return(
             <div className="container">
